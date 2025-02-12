@@ -1,11 +1,13 @@
 import{FaUser, FaLock} from 'react-icons/fa';
 import './Login.css';
 import Logo from "../../assets/Img/logoHam.png";
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 function Login() {
+    const navigate = useNavigate();
     return (
         <div className="Main-Login">
 
@@ -26,7 +28,7 @@ function Login() {
 
                     <p> Esqueceu a senha?&nbsp;<a href='#'>Clique Aqui </a></p>
 
-                    <button type='submit' className='btn-login'>Entrar</button>
+                    <button className='btn-login'>Entrar</button>
 
                 </form>
             </div>
@@ -37,7 +39,9 @@ function Login() {
 
                 <p>Para se cadastrar basta clicar no botão abaixo.</p>
 
-                <button className='btn-register'>Cadastre-se aqui!</button>
+                <button onClick={() => navigate ("/Register")} className='btn-register'>
+                    Cadastre-se aqui!
+                </button>
                 </div>
             </div>
 
