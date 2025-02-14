@@ -9,11 +9,11 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
     const navigate = useNavigate();
     return (
-        <div className="Main-Login">
+        <div className="tela-login">
 
             <div className="container-login-left">
 
-                <form action="">
+                <form>
                     <img src={Logo} alt="Logo" className="logo" />
                     <h1>Amparo de Maria</h1>
                     <div className='input-box'>
